@@ -6,14 +6,14 @@ import App from './App'
 import './index.css'
 import { HomePage } from './pages/HomePage'
 import { NotFound } from './pages/NotFound'
-import { PortfolioPage } from './pages/PortfolioPage'
+import Portfolio from './pages/PortfolioPage'
 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route index element={<HomePage />} />
-      <Route path="portfolio" element={<PortfolioPage />} />
+      <Route path="portfolio" element={<Portfolio />} />
       <Route path="*" element={<NotFound />} />
     </Route>
   )
