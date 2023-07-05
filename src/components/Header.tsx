@@ -1,9 +1,8 @@
 import { ActionIcon, Burger, Container, Group, Header, Title, createStyles, rem } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-import { IconBrandInstagram, IconBrandTwitter, IconBrandYoutube } from '@tabler/icons-react';
+import { IconBrandGithub, IconBrandGmail, IconBrandInstagram } from '@tabler/icons-react';
 import { useState } from 'react';
 import { Link } from "react-router-dom";
-
 const useStyles = createStyles((theme) => ({
   inner: {
     display: 'flex',
@@ -89,26 +88,32 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
   ));
 
   return (
-    <Header height={56} mb={120}>
+    <Header style={{marginBottom:0}} height={56} mb={120}>
       <Container className={classes.inner}>
         <Burger opened={opened} onClick={toggle} size="sm" className={classes.burger} />
         <Group className={classes.links} spacing={5}>
           {items}
         </Group>
 <Title>Lucas Alfredsson</Title>
-
         <Group spacing={0} className={classes.social} position="right" noWrap>
+        <a href="mailto:lucas12alfredsson@gmail.com">
           <ActionIcon size="lg">
-            <IconBrandTwitter size="1.1rem" stroke={1.5} />
+            <IconBrandGmail size="1.1rem" stroke={1.5} />
           </ActionIcon>
+          </a>
+          <a href="https://github.com/lauax">
           <ActionIcon size="lg">
-            <IconBrandYoutube size="1.1rem" stroke={1.5} />
+            <IconBrandGithub size="1.1rem" stroke={1.5} />
           </ActionIcon>
-          <ActionIcon size="lg">
+          </a>
+          <a href="https://www.instagram.com/lucasalfredsson/">
+          <ActionIcon size="lg" >
             <IconBrandInstagram size="1.1rem" stroke={1.5} />
           </ActionIcon>
+          </a>
         </Group>
       </Container>
+      
     </Header>
   );
 }
