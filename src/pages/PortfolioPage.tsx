@@ -47,11 +47,8 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <div>
-      <div style={{margin:'auto'}}>
-        <Text size="lg" weight={700}  style={{ marginBottom: '10px', color:'white', textAlign:'center' }}>
-          Portfolio
-        </Text>
+    <div style={{marginTop:'1rem' }}>
+      <div style={{margin:'auto' }}>
         {projects.map((project, index) => (
           <Card key={index} shadow="xs" padding="lg" style={{ marginBottom: '20px' }}>
             <Image src={project.image} alt={project.title} height={200} style={{ marginBottom: '10px' }} />
