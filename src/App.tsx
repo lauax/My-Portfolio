@@ -7,11 +7,10 @@ import LightBackgroundImage from './Images/LightmodeBackground.jpg'
 import DarkBackgroundImage from './Images/background.jpg'
 import { FooterBottom } from './components/Footer'
 import { HeaderMiddle } from './components/Header'
-import Portfolio from './pages/PortfolioPage'
 
 function App() {
   const headerLinks = [
-    { link: '', label: 'About me' },
+    { link: '', label: 'Homepage' },
     { link: '/portfolio', label: 'Portfolio' },
   ]
   const [isLightMode, setIsLightMode] = useState(true);
@@ -28,7 +27,6 @@ function App() {
       <HeaderMiddle links={headerLinks}/>
       <Button onClick={toggleBackgroundImage}>Toggle Background Image</Button>
       <Container size="xl">
-        <Portfolio/>
         <Outlet />
       </Container>
       <FooterBottom></FooterBottom>

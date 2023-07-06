@@ -48,8 +48,8 @@ const projects = [
 const Portfolio = () => {
   return (
     <div>
-      <div>
-        <Text size="lg" weight={700} style={{ marginBottom: '10px', color:'white' }}>
+      <div style={{margin:'auto'}}>
+        <Text size="lg" weight={700}  style={{ marginBottom: '10px', color:'white', textAlign:'center' }}>
           Portfolio
         </Text>
         {projects.map((project, index) => (
