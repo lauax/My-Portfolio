@@ -1,13 +1,13 @@
 import { Button, Container } from '@mantine/core';
 import { useState } from 'react';
 import { Outlet } from 'react-router-dom';
-import './App.css';
 import LightBackgroundImage from './Images/LightmodeBackground.jpg';
 import DarkBackgroundImage from './Images/background.jpg';
 import { FooterBottom } from './components/Footer';
 import { HeaderMiddle } from './components/Header';
+import './media.css';
 
-export const textColor = 'black'; // Set the initial textColor value
+export const textColor = 'black'; 
 
 export function App() {
   const headerLinks = [
@@ -19,13 +19,15 @@ export function App() {
   const toggleBackgroundImage = () => {
     setIsLightMode((prevMode) => !prevMode);
   };
-
+  
   const backgroundImage = isLightMode ? LightBackgroundImage : DarkBackgroundImage;
 
+  const Is768px = window.innerWidth <= 768;
+
   return (
-    <div style={{ backgroundImage: `url(${backgroundImage})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover', position:'absolute', width:'100vw' }}>
+    <div className={Is768px ? 'media-query-styles' : ''} style={{ width: '99%', backgroundImage: `url(${backgroundImage})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover', position: 'absolute' }}>
       <HeaderMiddle links={headerLinks} />
-      <Button style={{backgroundColor:'light'}}onClick={toggleBackgroundImage}>Toggle Background Image</Button>
+      <Button style={{ backgroundColor: 'light' }} onClick={toggleBackgroundImage}>Dark | Light</Button>
       <Container size="xl">
         <Outlet />
       </Container>

@@ -3,6 +3,7 @@ import { useDisclosure } from '@mantine/hooks';
 import { IconBrandGithub, IconBrandGmail, IconBrandInstagram } from '@tabler/icons-react';
 import { useState } from 'react';
 import { Link } from "react-router-dom";
+
 const useStyles = createStyles((theme) => ({
   inner: {
     display: 'flex',
@@ -94,7 +95,7 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
         <Group className={classes.links} spacing={5}>
           {items}
         </Group>
-<Title>Lucas Alfredsson</Title>
+<Title style={{fontSize:'1.5rem'}}>Lucas Alfredsson</Title>
         <Group spacing={0} className={classes.social} position="right" noWrap>
         <a href="mailto:lucas12alfredsson@gmail.com">
           <ActionIcon size="lg">
