@@ -1,18 +1,12 @@
 import image from '../Images/BildPåMig.jpg';
-import image1 from '../Images/göteborg-icon.png';
 import image2 from '../Images/hedås-icon.jpg';
+import image1 from '../Images/kvalitetslogga.jpg';
 import image4 from '../Images/medieinstitutet.jpg';
 import image3 from '../Images/teleperformance-icon.jpg';
 import './Erfarenhet.css';
 
 const projects = [
    
-    {
-        title: 'Göteborgs Stad, kultur- och fritidsförvaltningen',
-        date: '2016 Juli - 2016 Juli',
-        description: 'Jag sommarjobbade som ferieentreprenör. Vår uppgift var att skapa ett event för Göteborgs Stad. Projektet drevs från idé till handling. Vi skapade Pokemon Go Tour där turister kunde ansluta och se Göteborgs stad samtidigt som de spelade. Detta blev mycket populärt och liknande projekt skapades efter vårt, bland annat tog Stena Line efter denna idén.',
-        image: image1 
-    },
     {
         title: 'Hedås fastighetsservice',
         date: '2021 Maj - 2021 Augusti',
@@ -31,6 +25,12 @@ const projects = [
         description: 'Utbildas till Front end developer',
         image: image4 
     },
+    {
+        title: 'Fruktbud',
+        date: 'Pågående - Sommarjobb',
+        description: 'Jag jobbar deltid med att köra ut frukt sommarjobbade där och deltid innan sommarn nu nästa termin har jag bestämt mig för att lägga fullt fokus på skola istället.',
+        image: image1 
+    },
 ];
 
 export const Erfarenhet = () => {
@@ -42,9 +42,8 @@ export const Erfarenhet = () => {
                 <p className="about-me">Om mig:</p>
                 <p className="about-me">
                     Jag söker en LIA plats inom Front end. 
-                    Jag passar bra in på den angivna profilen.
                     Jag går för närvarande utbildningen Front end developer på Medieinstitutet På denna utbildning utbildas studenter till Front end developer. 
-                    Tonvikten ligger på Front end, med fokus på ämnen som HTML, CSS och Javascript. 
+                    Tonvikten ligger på Front end, med fokus på ämnen som HTML, CSS och Javascript och olika ramverk såsom ReactJS, NextJS, VueJS, Angular och fler. 
                     Jag vill gärna använda dessa färdigheter på och dra nytta av mina kunskaper på bästa möjliga sätt hos er. 
                     Jag skulle beskriva mig själv som någon som är Målinriktad person, Utmanar gärna mig själv och har ett bra tålamod. 
                     Jag jobbar hårt men noggrant jag är väldigt självständig men trivs även bra att jobba i lag kommer bra överens med det flesta. 
