@@ -42,8 +42,8 @@ export const Erfarenhet = () => {
                 <p className="about-me">Om mig:</p>
                 <p className="about-me">
                     Jag söker en LIA plats inom Frontend. 
-                    Jag går för närvarande utbildningen Frontend developer på Medieinstitutet På denna utbildning utbildas studenter till Front end developer. 
-                    Tonvikten ligger på Frontend, med fokus på ämnen som HTML, CSS och Javascript och olika ramverk såsom ReactJS, NextJS, VueJS, Angular och fler. 
+                    Jag går för närvarande utbildningen Frontend developer på Medieinstitutet på denna utbildning utbildas studenter till Frontend developer. 
+                    med fokus på ämnen som HTML, CSS och Javascript och olika ramverk såsom ReactJS, NextJS, VueJS, Angular och fler. 
                     Jag vill gärna använda dessa färdigheter på och dra nytta av mina kunskaper på bästa möjliga sätt hos er. 
                     Jag skulle beskriva mig själv som någon som är Målinriktad person, Utmanar gärna mig själv och har ett bra tålamod. 
                     Jag jobbar hårt men noggrant jag är väldigt självständig men trivs även bra att jobba i lag kommer bra överens med det flesta. 
