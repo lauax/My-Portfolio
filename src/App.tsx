@@ -13,7 +13,7 @@ export function App() {
     { link: '/portfolio', label: 'Portfolio' },
     { link: '/erfarenhet', label: 'Erfarenhet' }
   ];
-  const [isLightMode, setIsLightMode] = useState(true);
+  const [isLightMode, setIsLightMode] = useState(false);
 
   const toggleBackgroundImage = () => {
     setIsLightMode((prevMode) => !prevMode);
