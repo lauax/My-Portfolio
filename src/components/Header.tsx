@@ -82,6 +82,8 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
       })}
       onClick={() => {
         setActive(link.link);
+        toggle();
+        
       }}
     >
       {link.label}
@@ -91,7 +93,7 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
   return (
     <Header style={{marginBottom:0}} height={56} mb={120}>
       <Container className={classes.inner}>
-        <Burger opened={opened} onClick={toggle} size="sm" className={classes.burger} />
+      <Burger opened={opened} onClick={toggle} size="sm" className={classes.burger} />
         <Group className={classes.links} spacing={5}>
           {items}
         </Group>

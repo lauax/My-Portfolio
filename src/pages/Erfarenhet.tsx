@@ -22,7 +22,7 @@ const projects = [
     {
         title: 'Medieinstitutet',
         date: 'Pågående - 2024 Maj',
-        description: 'Utbildas till Front end developer',
+        description: 'Utbildas till Frontend developer',
         image: image4 
     },
     {
@@ -38,7 +38,7 @@ export const Erfarenhet = () => {
         <>
             <div id="gif-image">
                 <img src={image} alt="" style={{width:'10%'}}/>
-                <h1 id="text">Front End Developer</h1>
+                <h1 id="text">FrontEnd Developer</h1>
                 <p className="about-me">Om mig:</p>
                 <p className="about-me">
                     Jag söker en LIA plats inom Frontend. 
@@ -47,7 +47,7 @@ export const Erfarenhet = () => {
                     Jag vill gärna använda dessa färdigheter på och dra nytta av mina kunskaper på bästa möjliga sätt hos er. 
                       Jag skulle beskriva mig själv som någon som är Målinriktad person, Utmanar gärna mig själv och har ett bra tålamod. 
                     Jag jobbar hårt men noggrant jag är väldigt självständig men trivs även bra att jobba i lag kommer bra överens med det flesta. 
-                      Dessa egenskaper vill jag gärna ska komma till nytta i er organisation. Med tanke på min utbildning på Medieinstitutet passar jag till er LIA pratik plats som Front end developer.
+                      Dessa egenskaper vill jag gärna ska komma till nytta i er organisation. Med tanke på min utbildning på Medieinstitutet passar jag till er LIA pratik plats som Frontend developer.
                       De ämnen som lyftes under utbildningen matchar de färdigheter som efterfrågas för denna tjänst. Jag ser fram emot att mer ingående få beskriva min motivation samt relevans för tjänsten som Frontend developer under ett personligt samtal. 
                       Du kan nå mig via telefon på 0766377670 eller via e-post på lucas12alfredsson@gmail.com. 
                 </p>
