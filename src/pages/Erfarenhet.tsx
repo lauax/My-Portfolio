@@ -47,7 +47,7 @@ export const Erfarenhet = () => {
                     Jag vill gärna använda dessa färdigheter på och dra nytta av mina kunskaper på bästa möjliga sätt hos er. 
                     Jag skulle beskriva mig själv som någon som är Målinriktad person, Utmanar gärna mig själv och har ett bra tålamod. 
                     Jag jobbar hårt men noggrant jag är väldigt självständig men trivs även bra att jobba i lag kommer bra överens med det flesta. 
-                    Dessa egenskaper vill jag gärna ska komma till nytta i er organisation. Med tanke på min utbildning på Medieinstitutet passar jag er LIA pratik som Front end developer.
+                    Dessa egenskaper vill jag gärna ska komma till nytta i er organisation. Med tanke på min utbildning på Medieinstitutet passar jag till er LIA pratik plats som Front end developer.
                     De ämnen som lyftes under utbildningen matchar de färdigheter som efterfrågas för denna tjänst. Jag ser fram emot att mer ingående få beskriva min motivation samt relevans för tjänsten som Front end developer under ett personligt samtal. 
                     Du kan nå mig via telefon på 0766377670 eller via e-post på lucas12alfredsson@gmail.com. 
                 </p>
