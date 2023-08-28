@@ -1,8 +1,8 @@
-import { ActionIcon, Burger, Container, Group, Header, Title, createStyles, rem } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
+import { ActionIcon, Container, Group, Header, Title, createStyles, rem } from '@mantine/core';
 import { IconBrandGithub, IconBrandGmail } from '@tabler/icons-react';
 import { useState } from 'react';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
+import './header.css';
 
 const useStyles = createStyles((theme) => ({
   inner: {
@@ -20,7 +20,7 @@ const useStyles = createStyles((theme) => ({
     width: rem(260),
 
     [theme.fn.smallerThan('sm')]: {
-      display: 'none',
+      display: 'flex',
     },
   },
 
@@ -30,14 +30,6 @@ const useStyles = createStyles((theme) => ({
     [theme.fn.smallerThan('sm')]: {
       width: 'auto',
       marginLeft: 'auto',
-    },
-  },
-
-  burger: {
-    marginRight: theme.spacing.md,
-
-    [theme.fn.largerThan('sm')]: {
-      display: 'none',
     },
   },
 
@@ -69,9 +61,8 @@ interface HeaderMiddleProps {
 }
 
 export function HeaderMiddle({ links }: HeaderMiddleProps) {
-  const [opened, { toggle }] = useDisclosure(false);
-  const [active, setActive] = useState(links[0].link);
   const { classes, cx } = useStyles();
+  const [active, setActive] = useState(links[0].link);
 
   const items = links.map((link) => (
     <Link
@@ -82,36 +73,34 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
       })}
       onClick={() => {
         setActive(link.link);
-        toggle();
-        
       }}
     >
       {link.label}
     </Link>
   ));
 
+
+
   return (
-    <Header style={{marginBottom:0}} height={56} mb={120}>
+    <Header style={{ marginBottom: 0 }} height={56} mb={120}>
       <Container className={classes.inner}>
-      <Burger opened={opened} onClick={toggle} size="sm" className={classes.burger} />
-        <Group className={classes.links} spacing={5}>
-          {items}
-        </Group>
-<Title style={{fontSize:'1.5rem', color:'black'}}>Lucas Alfredsson</Title>
+          <Group className={classes.links}  spacing={5}>
+            {items}
+          </Group>
+          <Title className='title' style={{ fontSize: '1.5rem', color: 'black' }}>Lucas Alfredsson</Title>
         <Group spacing={0} className={classes.social} position="right" noWrap>
-        <a href="mailto:lucas12alfredsson@gmail.com">
-          <ActionIcon size="lg">
-            <IconBrandGmail size="1.1rem" stroke={1.5} />
-          </ActionIcon>
+          <a href="mailto:lucas12alfredsson@gmail.com">
+            <ActionIcon size="lg">
+              <IconBrandGmail size="1.1rem" stroke={1.5} />
+            </ActionIcon>
           </a>
           <a href="https://github.com/lauax">
-          <ActionIcon size="lg">
-            <IconBrandGithub size="1.1rem" stroke={1.5} />
-          </ActionIcon>
+            <ActionIcon size="lg">
+              <IconBrandGithub size="1.1rem" stroke={1.5} />
+            </ActionIcon>
           </a>
         </Group>
       </Container>
-      
     </Header>
   );
 }
