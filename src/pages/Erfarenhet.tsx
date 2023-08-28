@@ -41,7 +41,7 @@ export const Erfarenhet = () => {
                 <h1 id="text">Front End Developer</h1>
                 <p className="about-me">Om mig:</p>
                 <p className="about-me">
-                    Jag söker en LIA plats inom Front end. 
+                    Jag söker en LIA plats inom Frontend. 
                     Jag går för närvarande utbildningen Frontend developer på Medieinstitutet På denna utbildning utbildas studenter till Front end developer. 
                     Tonvikten ligger på Frontend, med fokus på ämnen som HTML, CSS och Javascript och olika ramverk såsom ReactJS, NextJS, VueJS, Angular och fler. 
                     Jag vill gärna använda dessa färdigheter på och dra nytta av mina kunskaper på bästa möjliga sätt hos er. 
