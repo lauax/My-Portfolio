@@ -4,3 +4,29 @@
     }
   }
 
+  @media (max-width: 1300px) {
+    .bodyhome {
+      height: 73vh !important;
+    }
+  }
+  @media (max-width: 820px) {
+    .bodyhome {
+      height: 76vh !important;
+    }
+  }
+  @media (max-width: 800px) {
+    .bodyhome {
+      height: 73vh !important;
+    }
+  }
+  @media (max-width: 600px) {
+    .bodyhome {
+      height: 77vh !important;
+    }
+  }
+
+  @media (max-width: 380px) {
+    .bodyhome {
+      height: 71vh !important;
+    }
+  }
