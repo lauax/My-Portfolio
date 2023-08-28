@@ -28,7 +28,7 @@ const projects = [
     {
         title: 'Fruktbud',
         date: 'Pågående - Sommarjobb',
-        description: 'Jag jobbar deltid med att köra ut frukt sommarjobbade där och deltid innan sommarn nu nästa termin har jag bestämt mig för att lägga fullt fokus på skola istället.',
+        description: 'Jag jobbar deltid med att köra ut frukt. Jag sommarjobbade även där nu nästa termin har jag bestämt mig för att lägga fullt fokus på skola istället.',
         image: image1 
     },
 ];
